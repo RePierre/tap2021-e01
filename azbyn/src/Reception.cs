@@ -23,17 +23,24 @@ namespace src
                 NewMansardRoom(),
             };
         }
+        public string GetRoomName(int roomNumber) {
+            return TryGetRoom(roomNumber).name;
+        }
         public int CalculateCost(int roomNumber, DateTime start, DateTime end)
         {
-            roomNumber--;
-            if (roomNumber < 0 || roomNumber >= rooms.Length)
+            return TryGetRoom(roomNumber).CalculateCost(start, end);
+        }
+
+        private Room TryGetRoom(int roomNumber)
+        {
+            if (roomNumber < 1 || roomNumber > rooms.Length)
             {
                 throw new InvalidOperationException(
-                    $"Room {roomNumber + 1} doesn't exist. We only have rooms 1..{rooms.Length}");
+                    $"Room {roomNumber} doesn't exist. We only have rooms 1..{rooms.Length}");
             }
-            return rooms[roomNumber].CalculateCost(start, end);
+            return rooms[roomNumber - 1];
         }
-        
+
         private Room NewFamilyRoom() { return new Room(200, "Family Room"); }
         private Room NewDoubleRoom() { return new Room(120, "Double Room"); }
         private Room NewDoubleRoomWithMountainView() { return new Room(150, "Double Room With Mountain View"); }
