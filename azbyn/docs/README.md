@@ -58,3 +58,10 @@ void SetColor(byte r, byte g, byte b) {...}
 void SetColor(uint hex) {...}
 ```
 
+De asemenea putem avea metode care își schimbă comportamentul în funcție de clasa obiectului
+
+```
+class A { public virtual int val() { return 42; } } 
+class B : A { public int val() { return 2; } } 
+```
+
