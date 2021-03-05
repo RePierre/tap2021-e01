@@ -10,6 +10,7 @@ Ex. : In cazul in care task-ul tau va fi de a crea o functionalitate de salvare 
 
 #### Incapsulare
 - ascunderea implementarii fata de client
+Ex. :Daca luam tot exemplul precendent in care tu faci functionalitatea de adaugare in baza de date, e posibil ca acolo sa ai niste variabile in care sa tii username-ul si parola de conectare la baza de date si nu ai vrea ca o alta functionalitatea sa poata modifica variabila username sau din gresala ea sa fie suprascrisa de un username folosit in zona de creare useri.
 
 ##### Modularizare
 -impartirea unui sistem complex in parti (module) manevrabile
