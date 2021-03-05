@@ -13,6 +13,9 @@ namespace src
             this.name = name;
         }
         public int CalculateCost(DateTime start, DateTime end) {
+            if (start > end) {
+                return CalculateCost(end, start);
+            }
             var delta = end - start;
             return CalculateCost(delta.Days);
         }
