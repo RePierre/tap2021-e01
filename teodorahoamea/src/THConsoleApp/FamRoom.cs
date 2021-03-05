@@ -6,6 +6,7 @@ namespace THConsoleApp
 {
     public class FamRoom : Room
     {
+       
         protected override decimal RoomPrice()
         {
 
