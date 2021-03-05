@@ -21,3 +21,14 @@ this->L=L;
 this->nrlaturi=4;
 }
 }
+
+2.Polimorfism : se atinge prin suprascriere si supraincarcare; asigura flexibilitate codului
+class bani {
+	
+	afis(int i){
+		cout<<i;
+	}
+	afis(double i){
+		cout<< i;
+	}
+}
