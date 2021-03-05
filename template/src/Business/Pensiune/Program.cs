@@ -19,7 +19,7 @@ namespace Pensiune
             days =  Convert.ToInt32(Console.ReadLine());
             Reception re = new Reception();
 
-            decimal Price = Reception.ReservesPrice(days, room);
+            decimal Price = Reception.ReservesPrice(days, room);// ??? Does not work
             Console.WriteLine("Price is:"+ Price +"\n");
         }
     }
