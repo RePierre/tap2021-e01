@@ -19,14 +19,14 @@ namespace BenescuMatei_App
         {
 
             decimal pret = menu[optiune];
-            return durata > 3 ? (pret - (pret * 0.1)) : pret;
+            return durata > 3 ? (pret - (pret * 0.1m)) : pret;
 
 
 
         }
 
 
-        public string CereMenu(Room camera)
+        public string CereMenu()
         {
 
             Console.WriteLine("Alegeti o camera la care doriti sa va cazati:\n");

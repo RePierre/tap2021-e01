@@ -9,10 +9,10 @@ namespace BenescuMatei_App
 
 
 
-        public Decimal pret { get; set; };
-        public int NumarulCamerei { get; set; };
-        public bool EsteLuata { get; set; };
-        public String pozitionarea { get; set; };
+        public Decimal pret { get; set; }
+        public int NumarulCamerei { get; set; }
+        public bool EsteLuata { get; set; }
+        public String pozitionarea { get; set; }
 
         public Room(Decimal pret, int NumarulCamerei, string pozitionare, bool rezervat)
         {
