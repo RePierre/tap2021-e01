@@ -20,17 +20,29 @@ public abstract decimal PaperCurrency();
 
 }
 
-2)Mostenirea
+2)Mostenirea - Avem o clasa derivata ce mosteneste(pastreaza proprieteati-le acesteia si le poate modifica) din clasa parinte metode si variabile
 
 
-Exemplu
+Exemplu: public class SodaVendingMachine:PocketChange{
+public override decimal PaperCurrency(){return change/2.0;}}
 
 
-3)Polimorfismul
+3)Polimorfismul- Mai multe derivate impartasesc acelasi comportament. Se realizeaza cu overload(acelasi nume la metoda) sau override(putem redefini metoda)	
 
 
 
-Exemplu
+Exemplu: public class SodaVendingMachine:PocketChange{
+public override decimal PaperCurrency(){return change/2.0;}   <----Override
+} 
+
+
+public class SodaVendingMachine:PocketChange{
+protected PocketChange(decimal change)
+{
+	this.change=2*change;     <----Overload
+}  
+} 
+ACELASI EXEMPLU ! dar restructurat
 
 
 Abstractizarea fiind ceva general codului/programarii.
