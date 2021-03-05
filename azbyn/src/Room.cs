@@ -13,7 +13,7 @@ namespace src
             this.name = name;
         }
         public int CalculateCost(DateTime start, DateTime end) {
-            var delta = start - end;
+            var delta = end - start;
             return CalculateCost(delta.Days);
         }
         protected virtual int CalculateCost(int duration) {
