@@ -1,0 +1,22 @@
+Principiile de baza ale POO
+
+Abstractizarea
+Este ca un set de metode publice pe care alte clase le pot apela fara sa stie cum functioneaza.
+Ar trebui sa ascunda detaliile de implementare si sa "arate" operatiile relevante pentru celelalte obiecte.
+De exemplu, la telefon avem doar cateva butoane si scopuri in care le putem folosi, dar nu ne intereseaza ce este in spatele lor, cum fac ele operatiile pe care le fac.
+
+Incapsularea
+Asigura faptul ca unele obiecte nu pot schimba starea interna a altor obiecte din clasa in mod direct (obiecte private), ci pot apela doar anumite metode publice.  
+Ajuta la ascunderea de informatii sensibile de catre utilizatori, in mod special variabile, metode sau clase care pot avea atributul private.
+De exemplu, daca am proiecta o masina, nu am dori ca utilizatorii ei sa poate accesa toate lucrurile, precum piesele mecanice. Piesele mecanice ar trebui accesate doar de personalul calificat, astfel incat le-am ascunde de accesul neautorizat.
+
+
+Polimorfismul
+Abilitatea de a procesa obiectele in mod diferit, in functie de tipul si clasa lor.
+De exemplu in clasa Figura, putem defini o metoda Arie. Daca Dreptunghi, Cerc vor extinde clasa Figura, acestea vor redefini metoda Arie.
+
+Mostenirea
+Permite construirea unor clase noi, care păstrează datele şi funcţiile membru, de la una
+sau mai multe clase definite anterior, numite clase de bază, fiind posibilă redefinirea sau adăugarea unor date si functii noi.
+Exemplu: La un magazin avem Clasa Angajat- clasa parinte, iar Incepator si Expert - clase copil. Toti angajatii vor putea sa incaseze sume de bani de la clienti, 
+dar doar expertii vor avea posibilitatea de a le acorda discounturi.
