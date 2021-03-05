@@ -6,19 +6,19 @@ Enumerați principiile programării orientate obiect și pentru fiecare principi
 Principii ale poo:
 1.Mostenirea : conceptul de creare de clase noi pornind de la clase vechi 
 
-class patrulater{ i
+class quadrilateral{ i
 nt nrlaturi; 
-patrulater() 
+quadrilateral() 
 {
 nrlaturi=4;
 }
 }
-class dreptunghi : patrulater{
+class rectagle : quadrilateral{
 int l,L;
-patrat(int l,int L){
+rectangle(int l,int L){
 this->l=l;
 this->L=L;
-this->nrlaturi=4;
+
 }
 }
 
