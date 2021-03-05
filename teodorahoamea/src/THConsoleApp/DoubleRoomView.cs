@@ -6,6 +6,7 @@ namespace THConsoleApp
 {
     class DoubleRoomView:Room
     {
+
         protected override decimal RoomPrice()
         {
 
