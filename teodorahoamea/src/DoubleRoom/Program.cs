@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace THConsoleApp
+namespace DoubleRoom
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var _room1 = new DoubleRoom();
-            var _room2 = new SingleRoom();
+            Console.WriteLine("Hello World!");
         }
     }
 }
