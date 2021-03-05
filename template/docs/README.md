@@ -36,3 +36,19 @@ class bani {
 a datelor fiind ascus,utilizatorului afisandu se doar rezultatul finit.
 
 			Interfata este o extensie a clasei abstracte,in sensul ca are daor functii pur virtuale;
+			
+4.Incapsularea leaga datele(variabilele) de codul propriu zis.Acest principiu a creat conceptul de ascunderre a datelor,adica de securizare a datelor.
+ex: 
+class money{
+
+	private total_amount;
+
+	public void add(int i)
+	{
+		total_ammount+=i;
+	}
+	public int show_total(){
+		return total_amount;
+	}
+	
+}
