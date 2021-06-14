@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SabinaTAPevaluare
+{
+    public class Reception
+    {
+        /*metoda care primeste ca parametri: nr camerei, data de inceput 
+         si data de sfarsit a rezervarii*/
+
+        public int CalculatePrice(int RoomNumber, date BeginDate, date EndDate)
+        {
+            Console.WriteLine("Write something here");
+
+            return Price;
+        }
+    }
+
+    public class Room
+    {
+        public string FloorName;
+        public int RoomNumber; /* de la 1 la 6*/
+        public string RoomType; /* Family, double, simple*/
+        public bool RoomView; /* 0 or 1*/
+        public int Price;
+
+
+        public void Greeting()
+        {
+            Console.WriteLine("Write something here");
+
+        }
+
+        /*
+        Room("Parter",1,"Family",0,200);
+
+        Room("FirstFloor",2,"Double",1,150);
+        Room("FirstFloor",3,"Double",1,150);
+        Room("FirstFloor",4,"Double",0,120);
+
+        Room("Mansarda",5,"Simple",0,100);
+        Room("Mansarda",6,"Simple",0,100);
+
+        */
+
+
+
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Room room = new Room(); /*we instantiate the object*/
+
+            room.FloorName = "Parter";
+            room.RoomNumber = 1;
+            room.RoomType = "Family";
+            room.RoomView = 0;
+            room.Price = 200;
+
+            room.Greeting();
+
+
+        }
+    }
+}
